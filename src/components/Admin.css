@@ -1,0 +1,168 @@
+/* ====== Admin Panel Styles ====== */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #333;
+}
+
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  max-width: 700px;
+  margin: 30px auto;
+  transition: all 0.3s ease;
+}
+
+.admin-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.admin-container h2, .admin-container h3 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 28px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Improved Add Product Form */
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form label {
+  font-weight: bold;
+  font-size: 18px;
+  color: #555;
+}
+
+.admin-form input, .admin-form select {
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.admin-form input:focus, .admin-form select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.7);
+}
+
+.admin-form button {
+  background: #6366f1;
+  color: white;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.admin-form button:hover {
+  background: #4f46e5;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.5);
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  padding: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 3px solid #6366f1;
+  object-fit: cover;
+}
+
+.btn-edit, .btn-delete {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-edit {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #2563eb;
+  box-shadow: 0 8px 15px rgba(59, 130, 246, 0.5);
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+  box-shadow: 0 8px 15px rgba(239, 68, 68, 0.5);
+}
+
+.preview-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 3px solid #6366f1;
+  object-fit: cover;
+}
+
+.admin-container input[type="url"] {
+  margin: 12px 0;
+  padding: 15px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.admin-container input[type="url"]:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 12px rgba(99, 102, 241, 0.7);
+}
